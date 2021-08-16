@@ -1,0 +1,19 @@
+# https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_5_D&lang=ja
+BIG_NUM = 2000000000
+
+
+N = int(input())
+x = 0
+
+for i in range(1,N+1):
+
+    if i%3 == 0:
+            print(" %d"%i,end = "");
+    else:
+        x = i
+        while (x):
+            if x%10 == 3:
+                print(" %d"%i,end = "")
+                break
+            x //= 10
+print()
